@@ -127,6 +127,13 @@ img {vertical-align: middle;}
 
 }
 
+.paragraph {
+  color: #d4938b;
+  text-align: center;
+  background-color: white;
+  margin: 10%;
+}
+
 .button {
   margin: 1%;
   background-color: #4CAF50; /* Green */
@@ -163,15 +170,23 @@ img {vertical-align: middle;}
       <h1 style="font-size:200px">NJIT Ultimate Frisbee</h1>
     </div>
   <div class="navigation">
-    <p class="button button1">About Us</p>
-    <p class="button button1">Contact</p>
-    <p class="button button1">Schedule</p>
-    <p class="button button1">Gallery</p>
+    <a href="#gallery" style="text-decoration : none;">
+      <p class="button button1">Gallery</p>
+    </a>
+    <a href="#about" style="text-decoration : none;">
+      <p class="button button1">About Us</p>
+    </a>
+    <a href="#contact" style="text-decoration : none;">
+      <p class="button button1">Contact</p>
+    </a>
+    <a href="#schedule" style="text-decoration : none;">
+      <p class="button button1">Schedule</p>
+    </a>
   </div>
   </div>
 
 </div>
-<div class="slideshow-container">
+<div class="slideshow-container" id="gallery">
 
 <div class="mySlides fade">
   <img src="https://i.ibb.co/PtKcbWt/1500-5.jpg" style="width:100%">
@@ -262,7 +277,7 @@ img {vertical-align: middle;}
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
-<br>
+<!-- <br> -->
 
 <!-- <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
@@ -287,6 +302,7 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(20)"></span>
   <span class="dot" onclick="currentSlide(21)"></span>
 </div> -->
+
 
 <script>
 var slideIndex = 1;
@@ -316,5 +332,25 @@ function showSlides(n) {
   // dots[slideIndex-1].className += " active";
 }
 </script>
+<div class="paragraph" id="about">
+  <br><br><br><br><br><br>
+  <h style="font-size: 80px">About Us:</h><br><br>
+  <h style="font-size: 50px">Founded in 1894, in a small fishing village off the coast of Tuscany, there lived a man by the name of Lasagna.
+    He prophecied that one day a baby would be born, who would be the "chosen one" and rule of the land.
+    That baby grew up to be the man we all know as Coach Jason, and thus the prophecy was fulfilled and the NJIT ultimate frisbee team was formed.
+  </h><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="paragraph" id="contact">
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <h style="font-size: 80px">Contact:</h><br><br>
+  <h style="font-size: 50px">Here's some contact infooooo
+  </h><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="paragraph" id="schedule">
+  <br><br><br><br><br><br><br><br><br><br><br><br>
+  <h style="font-size: 80px">Schedule:</h><br><br>
+  <h style="font-size: 50px">Everything is cancelled
+  </h><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 </body>
 </html>
