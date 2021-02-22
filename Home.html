@@ -3,10 +3,99 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+
 body, html {
   height: 100%;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+* {box-sizing: border-box}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  /* max-width: 99%; */
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 50px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
 
 .home-page{
@@ -16,7 +105,7 @@ body, html {
 
 
 .home-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, .5)), url("https://i.ibb.co/Hrt08kB/1500.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://i.ibb.co/Hrt08kB/1500.jpg");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,21 +114,23 @@ body, html {
 }
 
 .navigation {
-  text-align: center;
+  text-align: right;
 }
 
 .home-text {
-  text-align: center;
+  color: white;
+  text-align: left;
   position: absolute;
   top: 60%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
-  color: white;
+
 }
 
 .button {
   margin: 1%;
   background-color: #4CAF50; /* Green */
+  opacity: .3;
   border-radius: 12px;
   border: none;
   color: white;
@@ -56,7 +147,8 @@ body, html {
 }
 
 .button1:hover {
-  background-color: #ffcccb;
+  opacity: 1;
+  background-color: grey;
   color: white;
 }
 
@@ -67,6 +159,7 @@ body, html {
 
   <div class="home-image">
     <div class="home-text">
+
       <h1 style="font-size:200px">NJIT Ultimate Frisbee</h1>
     </div>
   <div class="navigation">
@@ -78,6 +171,150 @@ body, html {
   </div>
 
 </div>
+<div class="slideshow-container">
 
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/PtKcbWt/1500-5.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/hfxXRNt/1500-1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/YX45fKM/1500-2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/h7kCnjH/1500-3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/Hrt08kB/1500.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/kgmyS2m/1500-4.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/qjMdx7K/1500-6.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/1mLyHLX/1500-7.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/YfKwMjp/1500-10.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/bb2QcTx/1500-9.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/YdjbvG8/1500-11.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/myDq22D/1500-12.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/GRBzn01/1500-13.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/R3RfxqK/1500-8.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/XFKJ95x/1500-19.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/k98BVWJ/1500-18.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/WKQ8hns/1500-17.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/9hLwj93/1500-16.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/q5bWppT/1500-15.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/Bjp06Lr/1500-14.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://i.ibb.co/vkj4gPY/1500-20.jpg" style="width:100%">
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<!-- <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+  <span class="dot" onclick="currentSlide(14)"></span>
+  <span class="dot" onclick="currentSlide(15)"></span>
+  <span class="dot" onclick="currentSlide(16)"></span>
+  <span class="dot" onclick="currentSlide(17)"></span>
+  <span class="dot" onclick="currentSlide(18)"></span>
+  <span class="dot" onclick="currentSlide(19)"></span>
+  <span class="dot" onclick="currentSlide(20)"></span>
+  <span class="dot" onclick="currentSlide(21)"></span>
+</div> -->
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  // var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  // for (i = 0; i < dots.length; i++) {
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  // }
+  slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
+}
+</script>
 </body>
 </html>
