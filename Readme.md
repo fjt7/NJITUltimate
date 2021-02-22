@@ -27,4 +27,4 @@ https://i.ibb.co/R3RfxqK/1500-8.jpg
 https://i.ibb.co/vkj4gPY/1500-20.jpg
 
 To Do:
-Add navigation functionality...
+Add content, edit and resize for mobile
