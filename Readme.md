@@ -1,4 +1,8 @@
-NJIT Ultimate Frisbee Website:
+# NJIT Ultimate Frisbee Website:
+##### Developers
+* Aaron Basch - ab2496@njit.edu 
+* Vishal Ravikumar - vr36@njit.edu 
+* Franklin Tan - fjt7@njit.edu
 
 Home page--
 Consists of slideshow and navigation
@@ -28,3 +32,4 @@ https://i.ibb.co/vkj4gPY/1500-20.jpg
 
 To Do:
 Add content, edit and resize for mobile
+Condense homepage.
