@@ -19,10 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dee93a36-7b98-41f2-b675-89ebc58b0984" name="Default Changelist" comment="Feature: Added footer">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSS/Styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/Styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Home.html" beforeDir="false" afterPath="$PROJECT_DIR$/Home.html" afterDir="false" />
+    <list default="true" id="dee93a36-7b98-41f2-b675-89ebc58b0984" name="Default Changelist" comment="Feature: Added header">
+      <change beforePath="$PROJECT_DIR$/Readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +56,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1614093747459</updated>
-      <workItem from="1614093749377" duration="4881000" />
+      <workItem from="1614093749377" duration="5256000" />
     </task>
     <task id="LOCAL-00001" summary="Featured: Created CSS Directory">
       <created>1614093785084</created>
@@ -81,7 +79,21 @@
       <option name="project" value="LOCAL" />
       <updated>1614098222329</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Feature: Added header">
+      <created>1614098661391</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614098661391</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Feature: Added header">
+      <created>1614098906223</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1614098906223</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +117,13 @@
     <MESSAGE value="Featured: Added Head elements and tab" />
     <MESSAGE value="Edit: Fixed broken link" />
     <MESSAGE value="Feature: Added footer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature: Added footer" />
+    <MESSAGE value="Feature: Added header" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature: Added header" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1614098673963">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1614098673963" />
   </component>
 </project>

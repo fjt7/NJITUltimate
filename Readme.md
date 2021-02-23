@@ -7,6 +7,11 @@
 Home page--
 Consists of slideshow and navigation
 
+To Do:<br>
+Add content, edit and resize for mobile <br>
+Condense homepage. I think gallery should be a smaller carousel <br>
+Can we put the images in a folder instead just in case there are host issues?
+
 Images are being hosted for free via imgbb.com:
 https://i.ibb.co/tbqSrWQ/1500.jpg
 https://i.ibb.co/hfxXRNt/1500-1.jpg
@@ -29,7 +34,3 @@ https://i.ibb.co/k98BVWJ/1500-18.jpg
 https://i.ibb.co/XFKJ95x/1500-19.jpg
 https://i.ibb.co/R3RfxqK/1500-8.jpg
 https://i.ibb.co/vkj4gPY/1500-20.jpg
-
-To Do:
-Add content, edit and resize for mobile
-Condense homepage.
