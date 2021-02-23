@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    /* max-width: 99%; */
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
+}
+
+@media screen and (min-width: 601px) {
+    div.home-text {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.home-text {
+        font-size: 7vw;
+    }
+}
+
+.home-page {
+    height: 100%;
+    background-position: center;
+}
+
+
+.home-image {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://i.ibb.co/Hrt08kB/1500.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.navigation {
+    text-align: right;
+}
+
+.home-text {
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: 50%;
+    left: 39%;
+    transform: translate(-50%, -50%);
+
+}
+
+.paragraph {
+    color: #d4938b;
+    text-align: center;
+    background-color: white;
+    margin: 10%;
+}
+
+.button {
+    margin: 1%;
+    background-color: #4CAF50; /* Green */
+    opacity: .3;
+    border-radius: 80px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    /* border: 2px solid black; */
+}
+
+.button1:hover {
+    opacity: 1;
+    background-color: grey;
+    color: white;
+}
+
+/* Footer Styles Begin */
+footer {
+    background-color: #232c3b;
+    min-height: 350px;
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 30px
+}
+
+.footerleft {
+    margin-top: 20px;
+    padding: 0 36px;
+}
+
+.logofooter {
+    margin-bottom: 10px;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+}
+
+.footerleft p {
+    color: white;
+    font-size: 12px !important;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+
+.footerleft p i {
+    width: 20px;
+    color: #fff;
+}
+
+.paddingtop-bottom {
+    margin-top: 20px;
+}
+
+.footer-ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 2px;
+}
+
+.footer-ul li {
+    line-height: 29px;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.footer-ul li a {
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 200;
+    color: #fff;
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+    display: block;
+    padding-bottom: 5px;
+    border-bottom: 1px dotted #fff;
+}
+
+.footer-ul i {
+    margin-right: 10px;
+}
+
+.footer-ul li a:hover {
+    transition: color 0.2s linear 0s, background 0.2s linear 0s;
+    color: #73b0f4;
+}
+
+.social:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.icon-ul {
+    list-style-type: none !important;
+    margin: 0px;
+    padding: 0;
+}
+
+.icon-ul li {
+    line-height: 75px;
+    width: 100%;
+    float: left;
+}
+
+.icon {
+    float: left;
+    margin-right: 5px;
+}
+
+.copyright {
+    min-height: 40px;
+    background-color: #141d29;
+}
+
+.copyright p {
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.heading7 {
+    position: relative;
+    margin: 0 0 25px;
+    color: #fff;
+    padding-bottom: 5px;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.heading7:before {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 1px;
+    background-color: #fff;
+}
+
+.post p a {
+    font-size: 12px;
+    color: white !important;
+    line-height: 20px;
+}
+
+.post p a span {
+    display: block;
+    color: #8f8f8f !important;
+}
+
+.bottom_ul {
+    list-style-type: none;
+    float: right;
+    margin-bottom: 0;
+}
+
+.bottom_ul li {
+    float: left;
+    line-height: 40px;
+}
+
+.bottom_ul li:after {
+    content: "/";
+    color: white;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+
+.bottom_ul li a {
+    color: white;
+    font-size: 12px;
+}
+
+.post a:hover {
+
+    text-decoration: none;
+}
+
+.btn-insta {
+    color: white !important;
+    background: transparent;
+}
+
+.fields {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+/* Footer Ends */

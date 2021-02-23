@@ -1,185 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+  <title>NJIT Ultimate</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="CSS/Styles.css">
+  <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
 
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
 
-* {box-sizing: border-box}
-.mySlides {display: none}
-img {vertical-align: middle;}
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
 
-/* Slideshow container */
-.slideshow-container {
-  /* max-width: 99%; */
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 50px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
-@media screen and (min-width: 601px) {
-  div.home-text {
-    font-size: 5vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div.home-text {
-    font-size: 7vw;
-  }
-}
-
-.home-page{
-  height: 100%;
-  background-position: center;
-}
-
-
-.home-image {
-  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://i.ibb.co/Hrt08kB/1500.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.navigation {
-  text-align: right;
-}
-
-.home-text {
-  color: white;
-  text-align: left;
-  position: absolute;
-  top: 50%;
-  left: 39%;
-  transform: translate(-50%, -50%);
-
-}
-
-.paragraph {
-  color: #d4938b;
-  text-align: center;
-  background-color: white;
-  margin: 10%;
-}
-
-.button {
-  margin: 1%;
-  background-color: #4CAF50; /* Green */
-  opacity: .3;
-  border-radius: 80px;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 24px;
-}
-.button1 {
-  background-color: white;
-  color: black;
-  /* border: 2px solid black; */
-}
-
-.button1:hover {
-  opacity: 1;
-  background-color: grey;
-  color: white;
-}
-
-</style>
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      // var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = slides.length
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      // for (i = 0; i < dots.length; i++) {
+      //     dots[i].className = dots[i].className.replace(" active", "");
+      // }
+      slides[slideIndex - 1].style.display = "block";
+      // dots[slideIndex-1].className += " active";
+    }
+  </script>
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
+
 <body>
 <div class="home-page">
-
   <div class="home-image">
     <div class="home-text">
       <h1>NJIT Ultimate Frisbee</h1>
     </div>
+  </div>
+
   <div class="navigation">
     <a href="#gallery" style="text-decoration : none;">
       <p class="button button1">Gallery</p>
@@ -194,100 +64,101 @@ img {vertical-align: middle;}
       <p class="button button1">Schedule</p>
     </a>
   </div>
-  </div>
 
 </div>
+
 <div class="slideshow-container" id="gallery">
 
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/PtKcbWt/1500-5.jpg" style="width:100%">
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/PtKcbWt/1500-5.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/hfxXRNt/1500-1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/YX45fKM/1500-2.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/h7kCnjH/1500-3.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/Hrt08kB/1500.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/kgmyS2m/1500-4.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/qjMdx7K/1500-6.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/1mLyHLX/1500-7.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/YfKwMjp/1500-10.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/bb2QcTx/1500-9.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/YdjbvG8/1500-11.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/myDq22D/1500-12.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/GRBzn01/1500-13.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/R3RfxqK/1500-8.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/XFKJ95x/1500-19.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/k98BVWJ/1500-18.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/WKQ8hns/1500-17.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/9hLwj93/1500-16.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/q5bWppT/1500-15.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/Bjp06Lr/1500-14.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="https://i.ibb.co/vkj4gPY/1500-20.jpg" style="width:100%">
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 </div>
 
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/hfxXRNt/1500-1.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/YX45fKM/1500-2.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/h7kCnjH/1500-3.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/Hrt08kB/1500.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/kgmyS2m/1500-4.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/qjMdx7K/1500-6.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/1mLyHLX/1500-7.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/YfKwMjp/1500-10.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/bb2QcTx/1500-9.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/YdjbvG8/1500-11.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/myDq22D/1500-12.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/GRBzn01/1500-13.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/R3RfxqK/1500-8.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/XFKJ95x/1500-19.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/k98BVWJ/1500-18.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/WKQ8hns/1500-17.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/9hLwj93/1500-16.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/q5bWppT/1500-15.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/Bjp06Lr/1500-14.jpg" style="width:100%">
-</div>
-
-<div class="mySlides fade">
-  <img src="https://i.ibb.co/vkj4gPY/1500-20.jpg" style="width:100%">
-</div>
-
-
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-</div>
 <!-- <br> -->
 
 <!-- <div style="text-align:center">
@@ -315,53 +186,115 @@ img {vertical-align: middle;}
 </div> -->
 
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  // var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  // for (i = 0; i < dots.length; i++) {
-  //     dots[i].className = dots[i].className.replace(" active", "");
-  // }
-  slides[slideIndex-1].style.display = "block";
-  // dots[slideIndex-1].className += " active";
-}
-</script>
 <div class="paragraph" id="about">
   <br><br><br><br><br><br>
-  <h style="font-size: 5vw">About Us:</h><br><br>
-  <h style="font-size: 3.5vw">Founded in 1894, in a small fishing village off the coast of Tuscany, there lived a man by the name of Lasagna.
+  <h style="font-size: 5vw">About Us:</h>
+  <br><br>
+  <h style="font-size: 3.5vw">Founded in 1894, in a small fishing village off the coast of Tuscany, there lived a man by
+    the name of Lasagna.
     He prophecied that one day a baby would be born, who would be the "chosen one" and rule of the land.
-    That baby grew up to be the man we all know as Coach Jason, and thus the prophecy was fulfilled and the NJIT ultimate frisbee team was formed.
-  </h><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    That baby grew up to be the man we all know as Coach Jason, and thus the prophecy was fulfilled and the NJIT
+    ultimate frisbee team was formed.
+  </h>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
 
 <div class="paragraph" id="contact">
   <br><br><br><br><br><br><br><br><br><br><br><br>
-  <h style="font-size: 5vw">Contact:</h><br><br>
+  <h style="font-size: 5vw">Contact:</h>
+  <br><br>
   <h style="font-size: 3.5vw">Here's some contact infooooo
-  </h><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </h>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
 
 <div class="paragraph" id="schedule">
   <br><br><br><br><br><br><br><br><br><br><br><br>
-  <h style="font-size: 5vw">Schedule:</h><br><br>
+  <h style="font-size: 5vw">Schedule:</h>
+  <br><br>
   <h style="font-size: 3.5vw">Everything is cancelled
-  </h><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </h>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 col-sm-6 footerleft ">
+        <h6 class="heading7">About Us</h6>
+        <p>At NJIT Ultimate we place high value in cooperation before competition. Because we know that one may travel
+          far only if he has the support and the help of his friends.At NJIT Ultimate we place high value in cooperation
+          before competition. Because we know that one may travel far only if he has the support and the help of his
+          friends.
+        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><i class="fa fa-map-pin"></i>
+          <span itemprop="streetAddress">323 Dr Martin Luther King Jr Blvd, Newark, NJ 07102</span>,
+
+        <p><i class="fa fa-envelope"></i> E-mail :
+          <span itemprop="email"><a href="mailto:njit.ultimate@gmail.com" class="fields"
+                                    title="NJIT Ultimate">njit.ultimate@gmail.com</a></span></p>
+
+        <span itemprop="openingHoursSpecification" itemscope
+              itemtype="http://schema.org/OpeningHoursSpecification"><p><i
+                class="fa fa-calendar" aria-hidden="true"></i> Practices:
+          <span itemprop="dayOfWeek" itemscope itemtype="http://schema.org/DayOfWeek">
+            <span itemprop="name">TBA</span></span></p>
+      </div>
+      <div class="col-md-2 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">Useful Links</h6>
+        <ul class="footer-ul">
+          <li>
+            <a href="https://njit.campuslabs.com/engage/organization/ultimate" target="_blank"
+               rel="noopener noreferrer"> <i class="fa fm fa-angle-double-right"></i> Sign Up to Join</a>
+          </li>
+          <li>
+            <a href="https://play.usaultimate.org/members/login/" target="_blank"
+               rel="noopener noreferrer"> <i class="fa fm fa-angle-double-right"></i> USA Ultimate</a>
+          </li>
+          <li>
+            <a href="https://shop.theaudl.com/" target="_blank"
+               rel="noopener noreferrer"> <i class="fa fm fa-angle-double-right"></i> AUDL Shop</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">Discord Group</h6>
+        <div class="fb-page" data-href="https://discord.gg/hX4tXQS2" data-tabs="timeline"
+             data-small-header="true" data-width="270px" data-hide-cover="true"
+             data-height="260px"
+             data-show-facepile="true">
+          <blockquote cite="https://discord.gg/hX4tXQS2" class="fb-xfbml-parse-ignore"><a
+                  href="https://discord.gg/hX4tXQS2" target="_blank"
+                  rel="noopener noreferrer">Stay Updated</a>
+          </blockquote>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 paddingtop-bottom">
+        <h6 class="heading7">Contact</h6>
+        <ul class="footer-ul">
+          <li>
+            <a href="https://www.facebook.com/groups/73314199979/" target="_blank"
+               rel="noopener noreferrer"> <i class="fa fm fa-angle-double-right"></i> Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/njit_ultimate/" target="_blank"
+               rel="noopener noreferrer"> <i class="fa fm fa-angle-double-right"></i> Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="copyright">
+  <div class="container">
+    <div class="col-md-12 col-sm-12">
+      <p>© 2021 - NJIT Ultimate Frisbee. Website by Basch, Ravikumar, and Tan</p>
+    </div>
+  </div>
+</div>
+
 
 </body>
+
+
 </html>
