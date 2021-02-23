@@ -9,7 +9,8 @@ Consists of slideshow and navigation
 
 To Do:<br>
 Add content, edit and resize for mobile <br>
-Condense homepage. I think gallery should be a smaller carousel <br>
+Add favicon <br>
+Condense homepage. I think gallery should change to a smaller carousel <br>
 Can we put the images in a folder instead just in case there are host issues?
 
 Images are being hosted for free via imgbb.com:
